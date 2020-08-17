@@ -5,7 +5,6 @@ import LoadingGrid from '../components/LoadingGrid';
 import ItemGrid from '../components/ItemGrid';
 
 function CurrentlySlicing({ slicemasters }) {
-  console.log(slicemasters);
   return (
     <div>
       <h2 className="center">
@@ -24,7 +23,7 @@ function HotSlices({ hotSlices }) {
   return (
     <div>
       <h2 className="center">
-        <span className="mark tilt">Hot Slices</span>
+        <span className="mark tilt">Hot Slices!</span>
       </h2>
       <p>Come on by, buy the slice!</p>
       {!hotSlices && <LoadingGrid count={4} />}{' '}
